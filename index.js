@@ -13,8 +13,9 @@ class Driver {
 
   trips(){
     let result = store.trips.filter(function (trip) {
-      let result = trip.driverId === this.id
       debugger
+      let result = trip.driverId === this.id
+
     }
   );
 

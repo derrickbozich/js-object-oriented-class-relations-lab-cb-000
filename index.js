@@ -12,12 +12,12 @@ class Driver {
   }
 
   trips(){
-    return store.trips.filter((trip) => trip.driver.id === this.id);
+    return store.trips.filter((trip) => trip.driver().id === this.id);
   }
 
   passengers(){
     let passengers = []
-    this.trips().forEach((trip) => passengers.push(trip.passenger));
+    this.trips().forEach((trip) => passengers.push(trip.passenger()));
     return passengers;
   }
 
@@ -32,12 +32,12 @@ class Passenger {
   }
 
   trips(){
-    return store.trips.filter((trip) => trip.passenger.id === this.id);
+    return store.trips.filter((trip) => trip.passenger().id === this.id);
   }
 
   drivers(){
     let drivers = []
-    this.trips().forEach((trip) => drivers.push(trip.driver));
+    this.trips().forEach((trip) => drivers.push(trip.driver()));
     return drivers;
   }
 }
@@ -48,13 +48,15 @@ class Trip {
     this.id = ++tripId;
     this.driverId = driver.id;
     this.passengerId = passenger.id;
-    this.driver = driver;
-    this.passenger = passenger;
     store.trips.push(this);
   }
 
   driver(){
-    debugger
+    return store.drivers.find((driver) => this.driverId === driver.id)
+  }
+
+  passenger(){
+    return store.passengers.find((passenger) => this.passengerId === passenger.id)
   }
 
 }

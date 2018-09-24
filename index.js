@@ -18,7 +18,7 @@ class Driver {
   passengers(){
     let passengers = []
     this.trips().forEach((trip) => passengers.push(trip.passenger));
-    debugger
+    return passengers;
     // return store.trip.filter((trip) => trip.driver.id === this.id)
   }
 

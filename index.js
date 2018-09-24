@@ -12,6 +12,7 @@ class Driver {
   }
 
   trips(){
+    debugger
     return store.trips.filter((trip) => this.id === trip.driverId)
   }
 }

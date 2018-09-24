@@ -51,6 +51,8 @@ class Trip {
     store.trips.push(this);
   }
 
-
+  driverId(){
+    debugger
+  }
 
 }

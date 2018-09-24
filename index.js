@@ -13,7 +13,7 @@ class Driver {
 
   trips(){
     let result = store.trips.filter((trip) {
-      return  trip.driverId === this.id)
+      return  trip.driverId === this.id
     }.bind(this)
     debugger
   }

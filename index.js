@@ -53,7 +53,7 @@ class Trip {
 
   driver(){
     debugger
-    return this.driver;
+    // return this.driver;
   }
 
 }

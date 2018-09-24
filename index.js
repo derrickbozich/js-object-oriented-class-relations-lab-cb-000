@@ -51,8 +51,8 @@ class Trip {
     store.trips.push(this);
   }
 
-  driverId(){
-    return this.driver.id;
+  driver(){
+    return this.driver;
   }
 
 }

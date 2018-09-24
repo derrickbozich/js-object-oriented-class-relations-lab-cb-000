@@ -16,8 +16,8 @@ class Driver {
   }
 
   passengers(){
-    trips = this.trips();
-    
+    let trips = this.trips();
+
     debugger
     // return store.trip.filter((trip) => trip.driver.id === this.id)
   }

@@ -16,7 +16,7 @@ class Driver {
       debugger
       let result = trip.driverId === this.id
 
-    }
+    }.bind(this)
   );
 
   }

@@ -30,11 +30,11 @@ class Trip {
     store.trips.push(this);
   }
 
-  driverId(){
-    debugger
-    result = Driver.find((driver) => this.driverId === driver.id);
-
-    return result;
-  }
+  // driverId(){
+  //   debugger
+  //   result = Driver.find((driver) => this.driverId === driver.id);
+  //
+  //   return result;
+  // }
 
 }

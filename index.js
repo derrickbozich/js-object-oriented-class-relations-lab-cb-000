@@ -52,7 +52,8 @@ class Trip {
   }
 
   driver(){
-    return this.driver();
+    debugger
+    return this.driver;
   }
 
 }

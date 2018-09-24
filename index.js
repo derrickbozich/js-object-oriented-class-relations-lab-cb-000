@@ -1,9 +1,10 @@
 let store = {drivers: []}
+let driverId = 0;
 class Driver {
-  let id = 0;
+
   constructor(name, id){
     this.name = name;
-    this.id = ++id;
+    this.id = ++driverId;
     store.drivers.push(this);
   }
 }

@@ -51,9 +51,6 @@ class Trip {
     store.trips.push(this);
   }
 
-  driver(){
-    debugger
-    // return this.driver;
-  }
+
 
 }

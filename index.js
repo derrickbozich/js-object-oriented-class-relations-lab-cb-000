@@ -12,7 +12,11 @@ class Driver {
   }
 
   trips(){
-    return store.trips.filter((trip) => trip.driver.id === this.id)
+    return store.trips.filter((trip) => trip.driver.id === this.id);
+  }
+
+  passengers(){
+    return store.passengers.filter((trip) => trip.driver.id === this.id)
   }
 
 }

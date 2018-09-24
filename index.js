@@ -29,4 +29,10 @@ class Trip {
     this.passengerId = passengerId;
     store.trips.push(this);
   }
+
+  driverId(){
+    Driver.find((driver) => this.driverId === driver.id)
+    return
+  }
+
 }
